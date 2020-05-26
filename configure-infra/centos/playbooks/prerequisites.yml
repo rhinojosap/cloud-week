@@ -1,0 +1,26 @@
+---
+- hosts: all
+  vars_files:
+  - env_variables
+  tasks:
+  - name: Disabling Swap on all nodes
+    shell: swapoff -a
+
+  - name: Commenting Swap entries in /etc/fstab
+    replace:
+     path: /etc/fstab
+     regexp: '(.*swap*)'
+     replace: '#\1'
+
+  - name: Add yum utils
+    yum:
+      name: yum-utils
+      state: present
+
+  - name: Add repo Docker
+    shell: "yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo"
+
+  - name: Add repo Docker
+    shell: yum-config-manager --enable "docker-ce-stable"
+
+  
