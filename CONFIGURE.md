@@ -5,6 +5,7 @@
 Es necesario instalar los componentes siguientes, con la finalidad de conectarse a los servicios de Kubernetes de GCP:
 
 > gcloud 
+
 > kubectl
 
 #### gcloud:
