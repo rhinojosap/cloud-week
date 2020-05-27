@@ -26,7 +26,10 @@ Anterior a la instalacion podemos continuar con la atenbticacion y la comprobaci
 
 
 ### Iniciar el logging a GCP
-gcloud init
+
+```bash
+[rafael@rhinojosap gcp]$ gcloud init
+```
 
 Paso 1: [2] Create a new configuration
 
