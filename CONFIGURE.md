@@ -28,10 +28,12 @@ Anterior a la instalacion podemos continuar con la atenbticacion y la comprobaci
 gcloud init
 
 Paso 1: [2] Create a new configuration
+
 Paso 2: Configuration name: <optional>
 	bbva-workshop-cloudweek
 
 Paso 3: You must log in to continue. Would you like to log in (Y/n)?  Y
+
 	Se abrira el explorador y debemos de autrenticarnos con la cuenta de BBVA
 
 Paso 4: Regresamos a la terminal onde usamos el cli de gcloud y seleccionamos el proyecto: [X] cloud-week
@@ -39,9 +41,11 @@ Paso 4: Regresamos a la terminal onde usamos el cli de gcloud y seleccionamos el
 Paso 5: Do you want to configure a default Compute Region and Zone? (Y/n)? Y
 
 Paso 6: Which Google Compute Engine zone would you like to use as project default? 
+
 	[7] us-central1-c
 
 Paso 7: Ya debemos de estar autenticados, y ejecutamos el siguiemte comando con el siguiente resultado:
+
 ```bash
 [rafael@rhinojosap gcp]$ kubectl get nodes 
 NAME                                          STATUS   ROLES    AGE   VERSION
